@@ -11,27 +11,64 @@
 </head>
 <body>
     <header>
-        <!-- navbar -->
-        <section class="container mx-auto px-28 flex justify-between my-5">
-            <div>
-                <img class="mt-4" src="images/Tasty_HUT.png" alt="">
+        <!-- Navbar -->
+        <section class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-10 flex flex-col md:flex-row justify-between my-5">
+            <div class="flex justify-center md:justify-start">
+                <img class="mt-4 w-32 md:w-40 lg:w-48" src="images/Tasty_HUT.png" alt="">
             </div>
-            <div>
-                <button class="bg-amber-400 hover:bg-amber-500 px-4 py-2 text-2xl font-bold rounded-lg ">Sign Up</button>
+            <div class="flex justify-center items-center gap-4">
+                <div>
+                  <input id="search-field" type="text" class="p-2 shadow-md border rounded" placeholder="Search Your Food">
+                </div>
+                <div>
+                  <button id="btn-search" type="button" class="w-24 bg-amber-500 hover:bg-amber-600 px-2 py-2 text-md md:text-lg font-bold rounded-md">Search</button>
+                </div>
+              </div>
+            <div class="flex justify-center md:justify-end mt-4 md:mt-0">
+                <button class="bg-amber-400 hover:bg-amber-500 px-4 py-2 text-xl md:text-2xl font-bold rounded-lg">
+                    Sign Up
+                </button>
             </div>
         </section>
-
-        <!-- hero section -->
-        <section class="relative bg-[url('/images/banner_1.png')] w-full h-[650px] bg-cover bg-center">
-            <div class="absolute inset-0 bg-black opacity-50"></div>
+    
+        <!-- Hero Section -->
+        <section class="relative bg-[url('/images/banner_1.png')] w-full h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] bg-cover bg-center">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
             <div class="relative z-10 flex items-center justify-center h-full">
-                <div class="w-1/2">
-                    <h1 class="text-white text-7xl font-bold">Taste Our Delicious <br> Best Foods</h1>
-                    <p class="text-white text-xl">You can enjoy your best time with your family and frieds by tasting our delicious foods. This is the best place we can offer you to enjoy your time. We are very concerned about your health, so we maintain our food helthier like your home. Happy eating...
+                <div class="w-11/12 sm:w-3/4 md:w-2/3 lg:w-1/2 text-center md:text-left">
+                    <h1 class="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+                        Taste Our Delicious <br> Best Foods
+                    </h1>
+                    <p class="text-white text-base sm:text-lg md:text-xl mt-4">
+                        You can enjoy your best time with your family and friends by tasting our delicious foods. This is the best place we can offer you to enjoy your time. We are very concerned about your health, so we maintain our food healthier like your home. Happy eating...
                     </p>
                 </div>
-            </div>  
+            </div>
         </section>
     </header>
+    
+    <main>
+        <section class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-10 my-24">
+            <h1 class="text-center font-semibold text-5xl mb-10">Your Favourite Foods</h1>
+            <div id="meals-container" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Cards -->
+                    
+            </div>
+            <div id="no-meal" class="text-center mt-10 hidden">
+                <h1 class="text-yellow-500 font-bold text-3xl">NO FOOD FOUND. PLEASE, TRY AGAIN WITH ANOTHER ITEM.</h1>
+            </div>
+            <div id="show-all" class="text-center my-5 hidden">
+                <button id="btn-show-all" class="w-32 bg-amber-500 hover:bg-amber-600 px-2 py-2 text-lg md:text-xl font-bold rounded-lg">Show All</button>
+            </div>
+        </section>
+        <section id="spinner-container" class="hidden">
+            <div class="flex justify-center items-center">
+                <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
+            </div>
+         </section>
+    </main>
+    
+    <!-- scripts -->
+     <script src="app.js"></script>
 </body>
 </html>
