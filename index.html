@@ -8,6 +8,9 @@
      <link rel="shortcut icon" href="images/meal-favicon.png" type="image/x-icon">
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -72,7 +75,7 @@
             <div id="myModal" class="fixed z-20 inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50 hidden">
                 <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-5xl h-3/4 overflow-y-auto">
                     <button onclick="closeModal()" class="absolute top-11 right-32 px-4 py-2 bg-red-500 text-white rounded-full text-3xl font-extrabold">X</button>
-                    <h2 class="text-2xl font-bold mb-10 text-center">Meal Details</h2>
+                    <h2 class="text-2xl font-bold text-center">Meal Details</h2>
                     <div id="modal-body" class="text-left">
                     <!-- Dynamic content will be injected here -->
                     </div>
@@ -80,6 +83,42 @@
             </div>
           </section>
     </main>
+        <!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-10 mt-16">
+    <div class="container mx-auto px-6 lg:px-8 flex flex-wrap justify-between">
+      
+      <!-- Company Info -->
+      <div class="w-full md:w-1/3 mb-8 md:mb-0">
+        <h2 class="text-xl font-bold text-white mb-4">Tasty HUT</h2>
+        <p class="mb-4">
+          Tasty HUT provides top-notch foods to meet your desires of food. We strive to deliver the best service and create lasting relationships with our clients.
+        </p>
+        <p>&copy; 2024 Tasty HUT. All rights reserved.</p>
+      </div>
+  
+      <!-- Navigation Links -->
+      <div class="w-full md:w-1/3 mb-8 md:mb-0">
+        <h2 class="text-xl font-bold text-white mb-4">Quick Links</h2>
+        <ul class="space-y-2">
+          <li><a href="#home" class="hover:text-white">Home</a></li>
+          <li><a href="#about" class="hover:text-white">About Us</a></li>
+          <li><a href="#services" class="hover:text-white">Services</a></li>
+          <li><a href="#contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div class="w-full md:w-1/3">
+        <h2 class="text-xl font-bold text-white mb-4">Follow Us</h2>
+        <ul class="flex space-x-4">
+          <li><a href="https://facebook.com" target="_blank" class="hover:text-white"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com" target="_blank" class="hover:text-white"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://linkedin.com" target="_blank" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://instagram.com" target="_blank" class="hover:text-white"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
     <!-- scripts -->
      <script src="app.js"></script>

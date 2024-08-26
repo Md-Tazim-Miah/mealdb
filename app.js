@@ -102,6 +102,7 @@ const loadMealsDetails = async id => {
   const displayMealDetails = meal => {
     const modalBody = document.getElementById('modal-body');
     modalBody.innerHTML = `
+      <img class="w-full object-cover h-80 p-10" src="${meal.strMealThumb}">
       <p><strong>Origin:</strong> ${meal.strArea}</p>
       <p><strong>Dish Category:</strong> ${meal.strCategory || 'N/A'}</p>
       <p><strong>Ingredients:</strong></p>
